@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./Components/Header";
+import TempDashboard from "./Pages/TempDashboard";
 import SignUp from "./Pages/SignUp";
 import Login from "./Pages/Login";
 import ForgotPassword from "./Pages/ForgotPassword";
@@ -25,9 +26,9 @@ function App() {
         className="absolute bottom-[50px] left-[-250px] h-[768px] w-auto opacity-90"
       />
       <Header />
-      <div className="w-full max-w-[607px] p-4 md:p-8">
+      <div className="w-full max-w-[607px] p-4 md:p-8 z-[1]">
         <Routes>
-          <Route path="/" element={<SignUp />} />
+          <Route path="/" element={<TempDashboard />} />
           <Route path="/Signup" element={<SignUp />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Forgotpassword" element={<ForgotPassword />} />

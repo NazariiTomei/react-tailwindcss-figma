@@ -4,7 +4,7 @@ const CustomButton = ({ label }) => {
   return (
     <>
       {label && (
-        <button className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-[48px] rounded-lg p-2 bg-gradient-to-r from-[#6CE7E4] to-[#8F4AE3] flex items-center justify-center">
+        <button className="w-full  h-[48px] rounded-lg p-2 bg-gradient-to-r from-[#6CE7E4] to-[#8F4AE3] flex items-center justify-center">
           <p className="text-base sm:text-lg md:text-xl font-rubik font-semibold text-[#FFFFFF] leading-[1.5]">
             {label}
           </p>

@@ -3,7 +3,7 @@ import CustomAvatar from "../Components/CustomAvatar";
 import CustomSubHeader from "../Components/CustomSubHeader";
 import CustomButton from "../Components/CustomButton";
 import CustomCancelButton from "../Components/CustomCancelButton";
-import avatar from "../firefox.jpg";
+import avatar from "../Images/firefox.jpg";
 const AccountManagement = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-[#040b15] px-4 py-8 ">

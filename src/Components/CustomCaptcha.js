@@ -6,7 +6,7 @@ const CustomCheckbox = ({ label }) => {
       <input
         type="checkbox"
         id="custom-checkbox"
-        className="h-5 w-5 appearance-none bg-[#111A26] rounded-lg border border-[#8F4AE3] checked:bg-blue-600 checked:border-transparent focus:outline-none"
+        className="h-5 w-5 appearance-none bg-dark rounded-lg border border-[#8F4AE3] checked:bg-blue-600 checked:border-transparent focus:outline-none"
       />
       {label && (
         <label

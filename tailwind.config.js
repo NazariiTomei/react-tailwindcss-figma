@@ -3,13 +3,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "bg": "#040b15",
         "bg-dark": "#111A26",
         "border-blue": "#8F4AE3",
         "checked-blue": "#1D4ED8",
       },
       height: {
-        '12': '3rem',
-        '14': '3.5rem',
+        12: "3rem",
+        14: "3.5rem",
       },
       fontFamily: {
         rubik: ["Rubik", "sans-serif"],

@@ -45,7 +45,9 @@ const SignUp = () => {
           <CustomButton label="Register Now" />
         </div>
       </div>
-      <Footer />
+      <div className="w-[150%]">
+        <Footer />
+      </div>
     </div>
   );
 };

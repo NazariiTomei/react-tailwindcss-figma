@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const CustomLink = ({ label, linkname, url }) => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between w-full mb-4">
+    <div className="flex flex-row items-center justify-between w-full mb-4 space-x-2">
       <p className="font-rubik font-medium text-base text-[#FFFFFF] leading-6 md:text-lg md:leading-7">
         {label}
       </p>

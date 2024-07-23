@@ -2,11 +2,15 @@ import React from "react";
 
 const CustomButton = ({ label }) => {
   return (
-    <button className="w-full h-[48px] rounded-[8px] p-[12px 8px 13px 8px] bg-gradient-90">
-      <p className="w-full h-[23px] font-rubik font-[600] text-[16px] text-[#000000] leading-[23.2px]">
-        {label}
-      </p>
-    </button>
+    <>
+      {label && (
+        <button className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-[48px] rounded-lg p-2 bg-gradient-to-r from-[#6CE7E4] to-[#8F4AE3] flex items-center justify-center">
+          <p className="text-base sm:text-lg md:text-xl font-rubik font-semibold text-[#FFFFFF] leading-[1.5]">
+            {label}
+          </p>
+        </button>
+      )}
+    </>
   );
 };
 

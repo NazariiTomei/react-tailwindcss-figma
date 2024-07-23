@@ -1,7 +1,10 @@
 import React from "react";
 
 const CustomTextField = ({ label, type, placeholder }) => {
-  const id = label ? label.replace(/\s+/g, "-").toLowerCase() : undefined; // Create a unique ID from the label
+  const id =
+    label && typeof label === "string"
+      ? label.replace(/\s+/g, "-").toLowerCase()
+      : undefined;
 
   return (
     <div className="flex flex-col space-y-2">
@@ -13,12 +16,14 @@ const CustomTextField = ({ label, type, placeholder }) => {
           {label}
         </label>
       )}
-      <input
-        id={id}
-        type={type}
-        placeholder={placeholder}
-        className="w-full h-12 px-4 py-2 rounded-md bg-[#1E2C3C] text-[#FFFFFF8F] font-normal text-base border border-transparent focus:outline-none focus:ring-2 focus:ring-[#8F4AE3]"
-      />
+      {type && (
+        <input
+          id={id}
+          type={type}
+          placeholder={placeholder}
+          className="w-full h-12 px-4 py-2 rounded-md bg-[#1E2C3C] text-[#FFFFFF8F] font-normal text-base border border-transparent focus:outline-none focus:ring-2 focus:ring-[#8F4AE3]"
+        />
+      )}
     </div>
   );
 };

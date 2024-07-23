@@ -3,11 +3,13 @@ import React from "react";
 const CustomCancelButton = ({ label }) => {
   return (
     <>
-      <button className="w-full h-[48px] rounded-[8px] p-[12px 8px 13px 8px] border-[#8F4AE3] border-[1px]">
-        <p className="w-full h-[23px] font-rubik font-[600] text-[16px] text-[#8F4AE3] leading-[23.2px]">
-          {label}
-        </p>
-      </button>
+      {label && (
+        <button className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-[48px] rounded-lg border-2 border-[#8F4AE3] flex items-center justify-center p-2 bg-[#111A26]">
+          <p className="text-base sm:text-lg md:text-xl font-rubik font-semibold text-[#8F4AE3] leading-tight">
+            {label}
+          </p>
+        </button>
+      )}
     </>
   );
 };

@@ -1,9 +1,9 @@
 import React from "react";
+import CustomAvatar from "../Components/CustomAvatar";
 import CustomSubHeader from "../Components/CustomSubHeader";
 import CustomButton from "../Components/CustomButton";
 import CustomCancelButton from "../Components/CustomCancelButton";
-import CustomTextField from "../Components/CustomTextField";
-
+import avatar from "../firefox.jpg";
 const AccountManagement = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-[#040b15] px-4 py-8 ">
@@ -12,12 +12,17 @@ const AccountManagement = () => {
           &times;
         </div>
         <div className="space-y-4">
-          <CustomSubHeader subtitle="grassadmin@gmail.com" />
+          <CustomAvatar src={avatar} alt="avatar" size="w-[80px] h-[80px]" />
+          <CustomSubHeader
+            subtitle="grassadmin@gmail.com"
+            position="text-center"
+          />
         </div>
         <div className="space-y-4">
-          <CustomTextField
-            label="For product support please <u>join our discord</u> and create a ticket in our #support-ticket chatroom."
-          />
+          <p className="w-full h-[52px] font-rubik font-medium text-base text-[#FFFFFF] leading-6">
+            For product support please <u>join our discord</u> and create a
+            ticket in our #support-ticket chatroom.
+          </p>
         </div>
         <div className="space-y-4">
           <CustomButton label="Logout" />

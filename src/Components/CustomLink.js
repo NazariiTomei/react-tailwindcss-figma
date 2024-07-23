@@ -3,15 +3,17 @@ import { Link } from "react-router-dom";
 
 const CustomLink = ({ label, linkname, url }) => {
   return (
-    <div className="flex justify-between items-center w-full h-[28px] mb-4">
-      <p className="font-rubik font-medium text-[16px] text-[#FFFFFF] leading-[28px]">
+    <div className="flex flex-col md:flex-row items-center justify-between w-full mb-4">
+      <p className="font-rubik font-medium text-base text-[#FFFFFF] leading-6 md:text-lg md:leading-7">
         {label}
       </p>
-      <Link to={url} aria-label={linkname}>
-        <p className="underline font-rubik font-semibold text-[16px] text-[#8F4DE3] leading-[28px] cursor-pointer hover:underline">
-          {linkname}
-        </p>
-      </Link>
+      {linkname && url && (
+        <Link to={url} aria-label={linkname}>
+          <p className="underline font-rubik font-semibold text-base text-[#8F4DE3] leading-6 cursor-pointer hover:underline md:text-lg md:leading-7">
+            {linkname}
+          </p>
+        </Link>
+      )}
     </div>
   );
 };

@@ -7,7 +7,7 @@ const Header = () => {
       src={logo}
       loading="lazy"
       alt="ornament"
-      className="logo absolute top-[8px] left-[120px] w-[122px] h-[60px]"
+      className="logo absolute top-[8px] left-[8%] w-[122px] h-[60px]"
     ></img>
   );
 };

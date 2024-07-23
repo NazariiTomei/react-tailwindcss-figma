@@ -15,13 +15,13 @@ function App() {
   return (
     <div className="App flex flex-col items-center justify-center text-center min-h-screen overflow-hidden bg-[#040b15] relative">
       <img
-        src={bg}
+        src={bg1}
         loading="lazy"
         alt="ornament"
         className="absolute top-[-150px] right-[-150px] h-[768px] w-auto"
       />
       <img
-        src={bg1}
+        src={bg}
         loading="lazy"
         alt="ornament"
         className="absolute bottom-[50px] left-[-250px] h-[768px] w-auto opacity-90"
